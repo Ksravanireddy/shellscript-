@@ -1,0 +1,62 @@
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ cat vi forloop.sh
+cat: vi: No such file or directory
+#!/bin/bash
+# timestable - print out a multiplication table
+for i in 1 2 3
+do
+        for j in 1 2 3
+        do
+                value= 'expr $i\* $j'
+                echo -n"$value"
+        done
+        echo
+done
+
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ chmod u+x forloop.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ ls -l
+total 1
+-rwxr-xr-x 1 LENOVO 197121 160 Nov 15 18:30 forloop.sh*
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ ./forloop
+bash: ./forloop: No such file or directory
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ ./forloop.sh
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+./forloop.sh: line 7: expr $i\* $j: No such file or directory
+
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ vi forloop.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
+$ ./forloop.sh
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/sravapavs
